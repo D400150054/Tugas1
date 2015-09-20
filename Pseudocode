@@ -1,0 +1,8 @@
+Mulai
+Variable A,B,C
+Rumus: b^2-4ac
+if D<0 imajiner
+if D>0 x12= -b+-√b^2-4ac/2a
+if D=0 x12= -b+-√b^2-4ac/2a
+output x1,x2
+end.
