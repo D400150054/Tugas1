@@ -1,8 +1,38 @@
-Mulai
-Variable A,B,C
-Rumus: b^2-4ac
-if D<0 imajiner
-if D>0 x12= -b+-√b^2-4ac/2a
-if D=0 x12= -b+-√b^2-4ac/2a
-output x1,x2
-end.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a,b,c;
+    float D;
+    float x1, x2;
+
+    a=9;
+    b=4;
+    c=3;
+
+    if(a==0)
+    {
+        printf("Nilai variabel a tidak boleh nol !");
+    }
+    else
+    {
+        D= (b*b)-(4*a*c);
+        if (D < 0)
+        {
+            printf("Nilai Determinan tidak boleh negatif");
+            return 0;
+        }
+        else
+        {
+            //D>=0
+            x1 = (-b + sqrt(D))/(2*a);
+            x2 = (-b - sqrt(D))/(2*a);
+
+            printf("varibel input a=%d, b=%d, c=%d \n",a,b,c);
+            printf("Akar 1, x1 = %5.2f \n", x1);
+            printf("Akar 2, x2 = %5.2f \n", x2);
+        }
+    }
+    return 0;
+}
